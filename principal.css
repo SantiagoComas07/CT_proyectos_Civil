@@ -1,0 +1,292 @@
+* { box-sizing: border-box; /* Aplicar a todos los elementos */ 
+}
+
+
+body{
+background-color:beige;
+margin:0;
+padding:0;
+font-family: "Markazi Text", serif;
+font-optical-sizing: auto;
+font-style: normal;
+
+
+}
+
+
+header{
+margin:0;
+background-color:rgb(255, 255, 255);
+width:100%;
+}
+
+ 
+.contenedor_imagen_1{
+margin:0;
+width:100%;
+
+} 
+
+
+.imagen_1{
+
+width:100%;
+height:210px;
+}
+
+
+#navegador{
+height:70px;
+background-color: rgb(255, 255, 255);
+display:flex;
+justify-content: space-around;
+ box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.101);
+
+}
+
+
+.listas{
+
+list-style:none;
+
+}
+
+
+.listas a{
+
+    text-decoration:none;
+    color:black;
+}
+
+.listas a:hover{
+color:rgba(10, 128, 202, 0.6);
+
+}
+
+
+
+#Menu{
+height:auto;
+
+}
+
+
+#Menu_lista{
+align-items:center;
+margin:0;
+height:70px;
+display:flex;
+gap:20px;
+
+}
+
+
+
+/* Main de la pagina principal */
+
+.seccion{
+
+margin: 0 auto ;
+background-color: white;
+width:80%;
+margin-top:30px;
+padding:20px;
+display:flex;
+flex-direction:column;
+text-align:center;
+z-index:200;
+
+
+
+}
+
+.titulo_targeta{
+
+font-size:30px;
+
+
+
+}
+
+.contenido_textual{
+
+text-align:justify;
+margin:auto;
+margin-bottom:5px;
+
+}
+
+
+#Subcontenedor{
+display:flex;
+justify-content: space-around;
+}
+
+.ParrafoB{
+
+width:200px;
+
+}
+
+
+
+
+/* Edicion personalizada de cada targeta */
+#video_contenedor{
+
+width:95%;
+
+}
+
+
+#video_T1{
+    width:"280" ;
+    height:"158" ;
+}
+
+
+.imagen_T1{
+
+width:420px;
+height:400px;
+border-radius:7px;
+
+}
+
+
+
+/* Edicion personalizada de los servicios de la pagina principal */
+
+.servicios {
+    background-color: #3a6c8d;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top:20px;
+}
+
+.servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.servicio-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top:15px;
+}
+
+.servicio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.servicio-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicio-info {
+    padding: 15px;
+}
+
+.servicio-info h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.servicio-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn-ver-servicio {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-ver-servicio:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Beneficios */
+
+.imagen{
+
+    width:150px;
+    height:200px;
+
+}
+
+    .beneficios {
+        background-color: #ffffff;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    
+    .beneficios h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    
+    .beneficios-container {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .beneficio-item {
+        width: 22%;
+        background: #f7f7f7;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .beneficio-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .beneficio-icon {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+    
+    .beneficio-item h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .beneficio-item p {
+        font-size: 0.9rem;
+        color: #666;
+    }
