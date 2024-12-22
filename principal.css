@@ -18,6 +18,15 @@ header{
 margin:0;
 background-color:rgb(255, 255, 255);
 width:100%;
+
+}
+
+#encabezado{
+
+    position:sticky;
+    top:0;
+    z-index:1500;
+
 }
 
  
@@ -35,6 +44,24 @@ height:210px;
 }
 
 
+
+.titulo{
+
+display:flex;
+gap:10px;
+align-items:center;
+
+}
+
+.imagen_logo{
+
+width:50px;
+height:50px;
+}
+
+
+
+
 #navegador{
 height:70px;
 background-color: rgb(255, 255, 255);
@@ -42,7 +69,11 @@ display:flex;
 justify-content: space-around;
  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.101);
 
+
 }
+
+
+
 
 
 .listas{
@@ -113,18 +144,26 @@ font-size:30px;
 text-align:justify;
 margin:auto;
 margin-bottom:5px;
+z-index:500;
 
 }
+
+
 
 
 #Subcontenedor{
 display:flex;
 justify-content: space-around;
+
 }
 
-.ParrafoB{
 
-width:200px;
+#ParrafoB{
+
+width:20%;
+margin: auto 0;
+z-index:1000;
+
 
 }
 
@@ -139,9 +178,9 @@ width:95%;
 }
 
 
-#video_T1{
-    width:"280" ;
-    height:"158" ;
+.video_T1{
+    width:500 ;
+    height:278 ;
 }
 
 
@@ -152,7 +191,6 @@ height:400px;
 border-radius:7px;
 
 }
-
 
 
 /* Edicion personalizada de los servicios de la pagina principal */
@@ -240,16 +278,16 @@ border-radius:7px;
 
 }
 
-    .beneficios {
+    #beneficios {
         background-color: #ffffff;
         padding: 50px 20px;
         text-align: center;
     }
     
-    .beneficios h2 {
+    #beneficios h2 {
         font-size: 2rem;
         margin-bottom: 30px;
-        color: #333;
+        color: #333333a9;
     }
     
     .beneficios-container {
@@ -290,3 +328,38 @@ border-radius:7px;
         font-size: 0.9rem;
         color: #666;
     }
+
+
+
+    /* Estilización del footer */
+
+#footer{
+
+    background-color: #0056b3;
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#info-listas-footer{
+   display:flex;
+   gap:30px 
+  
+}
+
+
+.division-info h2{
+
+color:white;
+
+}
+
+
+#Logo-footer{
+ width:200px;
+ height:200px;
+ border-radius: 5px;
+
+}
