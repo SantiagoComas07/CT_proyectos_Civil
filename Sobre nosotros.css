@@ -376,26 +376,6 @@ justify-content: space-around;
 z-index: 200;
 }
 
-/* Seccion 2 responsive */
-
-@media (max-width:900px){
-
-    #Seccion_2{
-
-        flex-direction: column;
-        align-items: center;
-        z-index: 1000;
-    }
-
-    .Contenedores-seccion-2{
-        width:60%;
-    
-
-    }
-
-
-
-}
 
 .Contenedores-seccion-2{
 
@@ -404,12 +384,15 @@ z-index: 200;
     margin-top:30px;
     padding:20px;
     margin-bottom:20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
     border-radius: 5px;
     z-index:200;
 
 }
+
+
 
 
 #Presentacion{
@@ -433,10 +416,31 @@ z-index: 200;
     
 .imagen_presentacion{
     
-    width:200px;
-    height:300px;
+    width:100%;
     border-radius:7px;
     
+}
+
+
+/* Seccion 2 responsive */
+
+@media (max-width:900px){
+
+    #Seccion_2{
+
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .Contenedores-seccion-2{
+        width:60%;
+    
+
+    }
+
+
+
 }
 
 
@@ -444,34 +448,82 @@ z-index: 200;
 /* Estilizacion de footer */
 
 
-    #footer{
+       /* Estilización del footer */
 
-        background-color: #0056b3;
-        width:100%;
-        height:auto;
-        display: flex;
-        justify-content: space-evenly;
-    
-    }
-    
-    #info-listas-footer{
-       display:flex;
-       gap:30px;
-      
-    }
-    
-    
-    .division-info h2{
-    
+#footer{
+    max-width: 100vw;
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+
+}
+
+#info-listas-footer{
+    width: 100%;
+   display:flex;
+   gap:30px;
+   padding: 10px;
+   z-index:500;
+
+  
+  
+}
+
+
+#footer .listas a{
+
     color:white;
     
     }
-    
-    
-    #Logo-footer{
-     width:200px;
-     height:200px;
-     border-radius: 5px;
-    
+
+
+@media(max-width:400px){
+
+    .listas a{
+font-size:smaller ;
+
+
     }
+
+
+
+}
+
+
+.division-info h2{
+
+color:white;
+}
+
+
+.division-info {
+    width:100%;
+    justify-content: space-around;
+}
     
+
+
+
+
+#Logo-footer{
+ max-width:400px;
+
+ height:200px;
+ border-radius: 5px;
+
+}
+
+ 
+
+@media(max-width:800px){
+
+#footer{
+
+    flex-direction:column;
+    align-items: center;
+}
+
+
+
+} 

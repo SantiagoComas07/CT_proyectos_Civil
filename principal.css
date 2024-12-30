@@ -1,7 +1,8 @@
 * {
     
 
-    box-sizing: border-box; /* Aplicar a todos los elementos */ 
+    box-sizing: border-box; 
+
 }
 
 
@@ -391,6 +392,7 @@ height:280px;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    z-index: 300;
 }
 
 .servicio-item {
@@ -405,6 +407,31 @@ height:280px;
     margin-top:15px;
     cursor:pointer;
 }
+
+
+@media(max-width:600px){
+
+
+
+
+    .servicios-container {
+        display: flex;
+        flex-direction: column;
+        z-index: 1200;
+    }
+
+    .servicio-item{
+         width:90%; 
+        margin-top: 20px;
+
+    
+    }
+
+
+}
+
+
+
 
 .servicio-item:hover {
     transform: translate(0px, -10px);
@@ -577,6 +604,42 @@ width:40%;
 
 
 
+@media(max-width:500px){
+
+    #beneficios{
+
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+    }
+
+    .beneficios-container{
+    
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        z-index:1100;
+
+
+    }
+
+    .beneficio-item{
+
+        width: 90%;
+        z-index:1000;
+
+    }
+
+
+
+
+
+}
+
+
+
 
 
 
@@ -601,11 +664,35 @@ width:40%;
   
 }
 
-.listas a{
+ #footer .listas a{
 
 color:white;
 
 }
+
+
+/* contenido de footer responsive */
+
+
+@media(max-width:400px){
+
+    .listas a{
+font-size:smaller ;
+
+    }
+
+    .division-info h2{
+
+        color:white;
+        font-size: small; 
+    }
+
+
+
+}
+
+
+
 
 
 .division-info h2{
@@ -631,14 +718,16 @@ color:white;
 
 }
 
-/* 
+ 
 
 @media(max-width:800px){
 
 #footer{
 
     flex-direction:column;
+    align-items: center;
 }
 
 
-} */
+
+} 
