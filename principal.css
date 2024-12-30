@@ -6,20 +6,23 @@
 
 
 body{
+
 background-color:beige;
 margin:0;
 padding:0;
 font-family: "Markazi Text", serif;
 font-optical-sizing: auto;
 font-style: normal;
+
 }
 
 
  @media (max-width:670px){
 
 body{
+width:100vw;
+overflow-x:hidden;
 
-    width: 100vh;
 
 } 
 
@@ -85,7 +88,7 @@ background-color: rgb(255, 255, 255);
 display:flex;
 justify-content: space-around;
  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.101);
-
+position:relative;
 
 }
 
@@ -114,19 +117,21 @@ color:rgba(10, 128, 202, 0.6);
 }
 
 
+/* Menu Responsive */
+
 #btn_menu_abrir{
 
 display:none;
 border:0;
 font-size: 1.20rem;
 background-color: transparent;
-cursor:pointer;
 position:absolute;
-left:30em;
+left: 80%;
 top:1.2em;
-
+z-index:2000;
 
 }
+
 
 #Menu_lista{
     align-items:center;
@@ -145,11 +150,12 @@ top:1.2em;
     }
 
 
-@media(max-width:800px){
+@media(max-width:900px){
 
  #btn_menu_abrir{
 
     display:block;
+    right: 30px;
 }
 
 #Menu{
@@ -250,14 +256,16 @@ padding:20px;
 display:flex;
 flex-direction:column;
 text-align:center;
+border-radius: 5px;
 z-index:200;
+
 
 
 
 }
 
 .titulo_targeta{
-
+    color: #333333a9;
 font-size:30px;
 
 
@@ -375,7 +383,7 @@ height:280px;
 .servicios h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: #333;
+    color: white;
 }
 
 .servicios-container {
@@ -392,13 +400,25 @@ height:280px;
     width: 30%;
     text-align: left;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
     margin-top:15px;
+    cursor:pointer;
 }
 
 .servicio-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -10px);
+    background-color: #16b79a ; 
+        box-shadow: 0 6px 12px rgba(5, 1, 50, 0.677);
+    }
+
+
+.servicio-item:hover .servicio-info h3,
+.servicio-item:hover .servicio-info p {
+
+    color:white;
+
+
 }
 
 .servicio-imagen {
@@ -424,18 +444,36 @@ height:280px;
     margin-bottom: 10px;
 }
 
-.btn-ver-servicio {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+
+/* Servicios responsive  */
+
+@media(max-width:800px){
+
+
+
+.servicios{
+
+flex-direction:column;
+
+
 }
 
-.btn-ver-servicio:hover {
-    background-color: #0056b3;
+.servicios-container{
+    flex-direction:column;
+    align-items:center;
+
+
 }
+.servicio-item{
+
+width:40%;
+
+
+}
+
+
+}
+
 
 
 
@@ -465,6 +503,7 @@ height:280px;
         justify-content: space-around;
         gap: 20px;
         flex-wrap: wrap;
+        z-index:500;
     }
     
     .beneficio-item {
@@ -475,7 +514,7 @@ height:280px;
         text-align: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+        z-index:500;
     }
     
     .beneficio-item:hover {
@@ -485,7 +524,6 @@ height:280px;
     
     .beneficio-icon {
         font-size: 3rem;
-        color: #007bff;
         margin-bottom: 15px;
     }
     
@@ -502,35 +540,105 @@ height:280px;
 
 
 
+
+/* Beneficios responsive */
+
+
+@media(max-width:800px){
+
+    #beneficios{
+
+      display:flex;
+      justify-content: center;
+
+
+    }
+
+    .beneficios-container{
+      justify-content: center;
+        width:100%;
+        z-index:1000;
+
+
+    }
+
+    .beneficio-item{
+
+        width: 35%;
+        z-index:1000;
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
     /* Estilización del footer */
 
 #footer{
-
+    max-width: 100vw;
     background-color: #0056b3;
-    width:100%;
-    height:auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top:20px;
 
 }
 
 #info-listas-footer{
+    width: 100%;
    display:flex;
-   gap:30px 
+   gap:30px;
+   padding: 10px;
+
+  
   
 }
 
-
-.division-info h2{
+.listas a{
 
 color:white;
 
 }
 
 
+.division-info h2{
+
+color:white;
+}
+
+
+.division-info {
+    width:100%;
+    justify-content: space-around;
+}
+    
+
+
+
+
 #Logo-footer{
- width:200px;
+ max-width:400px;
+
  height:200px;
  border-radius: 5px;
 
 }
+
+/* 
+
+@media(max-width:800px){
+
+#footer{
+
+    flex-direction:column;
+}
+
+
+} */
