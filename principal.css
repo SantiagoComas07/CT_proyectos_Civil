@@ -8,7 +8,8 @@
 
 body{
 
-background-color:beige;
+background-color:
+#ffff;
 margin:0;
 padding:0;
 font-family: "Markazi Text", serif;
@@ -145,10 +146,10 @@ z-index:2000;
     }
 
 
-    #btn_menu_cerrar{
+ #btn_menu_cerrar{
         display:none;
 
-    }
+}
 
 
 @media(max-width:900px){
