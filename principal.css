@@ -259,15 +259,26 @@ z-index: 2000;
     font-size: 1em;
 }
 
-.listas a:hover{
+.listas a:active{
 
-    color: #bed4d3de;
+    color: #f7c511;
     
 }
 
 
 
 }
+
+
+
+@media(max-width:400px){
+    #btn_menu_abrir{
+        transform: translateX(17px);
+
+    }
+
+}
+
 
 
 /* configuracion del main */
@@ -499,6 +510,13 @@ grid-row: 1/2;
  
 color:#ababab;
 }
+
+.texto-servicio-card p{
+
+    text-align: justify;
+    font-weight: 300;
+    z-index: 500;
+}
  
 
 @media(max-width:800px){
@@ -726,6 +744,7 @@ border-radius: 7px;
     background-color: #828282;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top:20px;
 
 }
@@ -738,6 +757,8 @@ border-radius: 7px;
 #info-listas-footer{
     width: 100%;
    display:flex;
+   align-items: center;
+   text-align: center;
    gap:30px;
    padding: 10px;
 
@@ -745,8 +766,9 @@ border-radius: 7px;
   
 }
 
- #footer .listas a{
+ #footer .division-info a{
 
+    text-decoration: none;
 color:white;
 
 }
@@ -754,7 +776,7 @@ color:white;
 
 .Logo-footer{
 
-width:25%;
+width:50%;
 
 
 }
