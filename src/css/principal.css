@@ -55,7 +55,7 @@ width:100%;
 .contenedor_imagen_1{
 margin:0;
 width:100%;
-height:210px;
+height:13rem;
 background-image: url('https://images.pexels.com/photos/12096487/pexels-photo-12096487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 background-size: cover;
 background-repeat: no-repeat;
@@ -76,21 +76,21 @@ position:relative;
 
 .imagen_logo{
 
-width:80px;
-height:50px;
+width:100px;
+height:90px;
 }
 
 
 
 
 #navegador{
-height:70px;
-background-color: rgb(255, 255, 255);
-color:#636363;
-display:flex;
-justify-content: space-around;
- box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.101);
-position:relative;
+    height:70px;
+    background-color: rgb(255, 255, 255);
+    color:#636363;
+    display:flex;
+    justify-content: space-around;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.101);
+    position:relative;
 
 
 }
@@ -159,8 +159,9 @@ z-index:2000;
     display:flex;
     gap:20px;
     z-index: 2000;
-    
+    padding: 0.4rem;
     }
+
 
 
  #btn_menu_cerrar{
@@ -175,19 +176,19 @@ z-index:2000;
 
     display:block;
     right: 30px;
-}
+    }
 
-#Menu{
-display:none;
+    #Menu{
+    display:none;
 
-} 
+    } 
 
 
 
-#navegador{
+    #navegador{
 
-position: relative;
-}
+    justify-content: space-between;
+    }
 
 
 
@@ -196,7 +197,7 @@ position: relative;
 #Menu_lista{
 width:100%;
 flex-direction: column;
-align-items: end;
+align-items: start;
 height:150px;
 z-index: 4000;
 right: 0;
@@ -211,7 +212,7 @@ right: 0;
 } 
 #Menu{
     width: 30%;
-    height:280px; 
+    height:18rem; 
     position:absolute;
     top:120px;
     right:0;
@@ -219,7 +220,7 @@ right: 0;
     background-color:rgba(170, 170, 170, 0.5);
     border-radius: 2px;
     backdrop-filter: blur(15px) drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
-    padding: 1rem 1.6rem 5rem 1rem;
+    padding: 0.5rem 1rem 2rem 0.5rem;
     transform: translateY(-50px);
     z-index: 3000;
    
@@ -692,10 +693,10 @@ justify-content: space-around;
 
     text-decoration: none;
     text-align: center;
-    padding:5px 15px 5px 15px;
-    background-color: green;
+    padding:0.5rem 1.5rem;
+    background-color: rgb(11, 214, 0);
     color:whitesmoke;
-    border-radius: 20px;
+    border-radius: 0.8rem;
     font-weight: 700;
     
 
@@ -759,11 +760,7 @@ border-radius: 7px;
    display:flex;
    align-items: center;
    text-align: center;
-   gap:30px;
-   padding: 10px;
-
-  
-  
+   gap:5%;
 }
 
  #footer .division-info a{
@@ -776,7 +773,8 @@ color:white;
 
 .Logo-footer{
 
-width:50%;
+width:70%;
+
 
 
 }
@@ -821,7 +819,7 @@ width:50%;
     
     
     }
-    
+
     .division-info h2{
     
     color:white;
@@ -832,11 +830,7 @@ width:50%;
         width:100%;
         justify-content: space-around;
     }
-        
-    
-    
-    
-    
+   
     #Logo-footer{
      max-width:400px;
     
